@@ -6,7 +6,6 @@ red_channel, green_channel, blue_channel = image_monro.split()
 crop_size = 50
 alpha = 0.5
 
-#
 red_croped_left = red_channel.crop((crop_size, 0, image_monro.width, image_monro.height))
 red_croped_middle = red_channel.crop((crop_size/2, 0, image_monro.width - crop_size/2, image_monro.height))
 monro_cropped_red = Image.blend(red_croped_left, red_croped_left, alpha)
