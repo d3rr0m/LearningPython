@@ -18,5 +18,5 @@ monro_cropped_green = green_channel.crop((crop_size/2, 0, green_channel.width - 
 
 avatar = Image.merge("RGB", (monro_cropped_red, monro_cropped_green, monro_cropped_blue))
 avatar.save("avatar.jpg")
-avatar.thumbnail((80,80))
+avatar.thumbnail((80, 80))
 avatar.save("avatar_thumbnail.jpg")
